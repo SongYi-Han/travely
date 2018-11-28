@@ -60,6 +60,9 @@
   color: $blue;
 }
 
+button:focus {
+  outline: none;
+}
 
 // .btn-purple {
 //   color: #fff;
