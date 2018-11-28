@@ -15,7 +15,7 @@
             <div class="city-card">
               <div>
               <div class="stop-city"><strong><%= stop.city.capitalize %></strong></div>
-              <div class="stop-dates"><%= stop.start_date.strftime("%b %d, %y") %> - <%= stop.end_date.strftime("%b %d, %y") %></div>
+              <div class="stop-dates"><%= stop.start_date.strftime("%b %e, %y") %> - <%= stop.end_date.strftime("%b %e, %y") %></div>
             </div>
               <% if !(stop.photo.file.nil?)%>
               <%= cl_image_tag stop.photo,height: 60, width: 60, crop: :scale, class: "city-adv" %>
@@ -95,8 +95,8 @@
                     <span class="text">You will both be in </span>
                     <span class="text-var"><%= request.listing.stop.city %></span>
                     <span class="text">between<span>
-                    <p class="text-var"><i class="far fa-calendar-alt"></i> <strong><%= common_dates[0].strftime("%b %d, %Y") %> <i class="fas fa-ellipsis-h"></i><i class="fas fa-ellipsis-h"></i><i class="fas fa-ellipsis-h"></i><i class="fas fa-ellipsis-h"></i>
-                    <%= common_dates[-1].strftime("%b %d, %Y") %></strong></p>
+                    <p class="text-var"><i class="far fa-calendar-alt"></i> <strong><%= common_dates[0].strftime("%b %e, %Y") %> <i class="fas fa-ellipsis-h"></i><i class="fas fa-ellipsis-h"></i><i class="fas fa-ellipsis-h"></i><i class="fas fa-ellipsis-h"></i>
+                    <%= common_dates[-1].strftime("%b %e, %Y") %></strong></p>
                   </div>
                   <div class="line"></div>
                   <div class="request-card-actions offers-card-content">
