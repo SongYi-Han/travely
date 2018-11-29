@@ -8,8 +8,8 @@
   <br>
   <% @stops.each do |stop| %>
     <%= check_box_tag "city[#{stop.id}", 1 %>
-    <% city_with_dates = "#{stop.city.capitalize} (#{stop.start_date.strftime("%b %d")}~#{stop.end_date.
-              strftime("%b %d")})"  %>
+    <% city_with_dates = "#{stop.city.capitalize} (#{stop.start_date.strftime("%b %e, %Y")} ~ #{stop.end_date.
+              strftime("%b %d, %Y")})"  %>
     <%= label_tag stop.city,  city_with_dates %>
     <br>
   <% end %>

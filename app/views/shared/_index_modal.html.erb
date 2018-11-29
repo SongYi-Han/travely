@@ -21,7 +21,7 @@
           <p><%= item.description %></p>
           <% if current_user != item.user %>
             <h4>Dates available for you:</h4>
-            <p><%= common_dates[0] %> ~  <%=  common_dates[-1] %></p>
+            <p><%= common_dates[0].strftime("%a, %b %e")  %> ~  <%=  common_dates[-1].strftime("%a, %b %e") %></p>
           <% end %>
           <h4>Owner:</h4>
           <p><%= cl_image_tag item.user.photo, class: "avatar-large" %><%= item.user.first_name %></p>
