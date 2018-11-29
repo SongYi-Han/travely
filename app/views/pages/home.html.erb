@@ -1,53 +1,55 @@
-<div class="home-title"><%= image_tag "Final-logo.png", style: 'height:100px' %>
-  <h1> Travel light and easy with</h1>
-  travely
-  <div class="instructions">
-    <p>Travely is a platform that helps travellers share items.</p>
+<div class="background-image" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path 'globe_background.jpeg' %>');">
+
+
+  <div class="home-title">
+    <h1> Travel light and easy with</h1>
+    travely
+    <div class="instructions">
+      <p>Travely is a platform that helps travellers share items.</p>
+    </div>
   </div>
-</div>
 
+  <div class="container">
+      <div id="form">
+        <!-- <div class="home-form-title">Enter your itinerary</div> -->
+        <div class="home-form-title"></div>
+          <div class="sim-form" >
+              <%= form_tag(stops_path, class: "go-right") do %>
+              <div class="trip-fields">
 
-<div class="container">
-    <div id="form">
-      <!-- <div class="home-form-title">Enter your itinerary</div> -->
-      <div class="home-form-title"></div>
-        <div class="sim-form" >
-            <%= form_tag(stops_path, class: "go-right") do %>
-            <div class="trip-fields">
-
-              <div class="trip-field">
-                <div class="focus-label">
-                  <div class="nested-label">City</div>
-                </div>
-                <div class="focus-label">
-                  <div class="nested-label">Start date</div>
-                </div>
-                <div class="focus-label">
-                  <div class="nested-label">End date</div>
-                </div>
-                <button class="hidden-x" disabled><i class="fas fa-times-circle"></i></button>
-              </div>
-
-              <div id="trip-field-1" class="trip-field">
-                  <%= text_field_tag('stops[1][city]', nil, :required => true, class: "nested-input city-size algolia-input", id: "city-input", placeholder: "Enter Destination" ) %>
-                  <%= text_field_tag('stops[1][start_date]', Date.today, :required => true, class: "nested-input date-size" ) %>
-                  <%= text_field_tag('stops[1][end_date]', Date.today + 7, :required => true, class: "nested-input date-size" ) %>
+                <div class="trip-field">
+                  <div class="focus-label">
+                    <div class="nested-label">City</div>
+                  </div>
+                  <div class="focus-label">
+                    <div class="nested-label">Start date</div>
+                  </div>
+                  <div class="focus-label">
+                    <div class="nested-label">End date</div>
+                  </div>
                   <button class="hidden-x" disabled><i class="fas fa-times-circle"></i></button>
+                </div>
+
+                <div id="trip-field-1" class="trip-field">
+                    <%= text_field_tag('stops[1][city]', nil, :required => true, class: "nested-input city-size algolia-input", id: "city-input", placeholder: "Enter Destination" ) %>
+                    <%= text_field_tag('stops[1][start_date]', Date.today, :required => true, class: "nested-input date-size" ) %>
+                    <%= text_field_tag('stops[1][end_date]', Date.today + 7, :required => true, class: "nested-input date-size" ) %>
+                    <button class="hidden-x" disabled><i class="fas fa-times-circle"></i></button>
+                </div>
               </div>
             </div>
+          <p id="add-city">+add city</p>
+          <div class="home-button" id="submit-button">
+            <%= submit_tag("Search", class: "button button-purple submit-button") %>
+            <%= submit_tag("Share item", class: "button button-blue submit-button") %>
+            <div class="donut"></div>
           </div>
-        <p id="add-city">+add city</p>
-        <div class="home-button" id="submit-button">
-          <%= submit_tag("Search", class: "button button-purple submit-button") %>
-          <%= submit_tag("Share item", class: "button button-blue submit-button") %>
-          <div class="donut"></div>
-        </div>
 
-        <% end %>
+          <% end %>
+
+  </div>
 
 </div>
-
-
 
 
 <%= javascript_pack_tag 'add_city' %>
