@@ -86,7 +86,7 @@
 
 
     tablinks.forEach((tablink) => {
-      tablink.classList.remove("active");
+      tablink.classList.remove("tab-active");
     });
 
     circles.forEach(el => {
@@ -95,7 +95,7 @@
 
     // Show the current tab, and add an "active" class to the button that opened the tab
     // document.getElementById(event.currentTarget).style.display = "block";
-    event.currentTarget.classList.add("active");
+    event.currentTarget.classList.add("tab-active");
     selectedCircle.classList.add("selected-circle");
     selectedTab.style.display = "block";
 }
