@@ -5,7 +5,9 @@ a:hover {
 .itinerary {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   padding-bottom: 40px;
+  text-align: center;
   font-size: 30px;
   font-weight: 500;
 }
