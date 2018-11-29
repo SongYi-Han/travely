@@ -22,7 +22,7 @@ class StopsController < ApplicationController
       only_city_name = stop.city.split(",")[0]
       stop.city = only_city_name.downcase
       stop.remote_photo_url = "https://kitt.lewagon.com/placeholder/cities/#{stop.city}"
-      stop.save!
+      stop.save
     end
   end
 
