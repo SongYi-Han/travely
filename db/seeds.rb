@@ -69,7 +69,7 @@ evan_lisbon_stop = Stop.create(city:"lisbon", start_date:Date.new(2018,12,01), e
 evan_barcelona_stop = Stop.create(city:"barcelona", start_date:Date.new(2018,12,07), end_date:Date.new(2018,12,14), user:evan, photo: File.open(Rails.root.join("app", "assets", "images", "barcelona.jpeg")))
 evan_paris_stop = Stop.create(city:"paris", start_date:Date.new(2018,12,14), end_date:Date.new(2018,12,21), user:evan, photo: File.open(Rails.root.join("app", "assets", "images", "paris.jpg")))
 evan_lausanne_stop = Stop.create(city:"lausanne", start_date:Date.new(2018,12,21), end_date:Date.new(2018,12,28), user:evan, photo: File.open(Rails.root.join("app", "assets", "images", "lausanne.jpeg")))
-vini_paris_stop = Stop.create(city:"paris", start_date:Date.new(2018,12,15), end_date:Date.new(2018,12,31), user:vini, photo: File.open(Rails.root.join("app", "assets", "images", "paris.jpg")))
+vini_paris_stop = Stop.create(city:"paris", start_date:Date.new(2018,12,16), end_date:Date.new(2018,12,31), user:vini, photo: File.open(Rails.root.join("app", "assets", "images", "paris.jpg")))
 puts 'done creating stops'
 puts
 
