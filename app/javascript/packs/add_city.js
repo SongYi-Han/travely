@@ -1,4 +1,17 @@
+// import "propellerkit-datetimepicker"
+import "bootstrap-datepicker"
+import "bootstrap-datepicker/dist/css/bootstrap-datepicker.css";
 var places = require('places.js');
+$(`#stops_1_start_date`).datepicker({
+  format: "yyyy-mm-dd",
+  autoclose: true,
+  orientation: 'bottom'
+});
+$(`#stops_1_end_date`).datepicker({
+  format: "yyyy-mm-dd",
+  autoclose: true,
+  orientation: 'bottom'
+});
 
 
 // selects first trip field inputs (city, start_date, end_date)
@@ -14,7 +27,18 @@ function addNewCityField() {
       const tripField = buildNewCityFields(newTripId);
       formInputs.append(tripField);
       bindEventLister(tripField);
-      assignAutocompleteToLastCityInput(newTripId.split("-")[2]);
+      const newTripNumber = newTripId.split("-")[2];
+      assignAutocompleteToLastCityInput(newTripNumber);
+      $(`#stops_${newTripNumber}_start_date`).datepicker({
+        format: "yyyy-mm-dd",
+        autoclose: true,
+        orientation: 'bottom'
+      });
+      $(`#stops_${newTripNumber}_end_date`).datepicker({
+        format: "yyyy-mm-dd",
+        autoclose: true,
+        orientation: 'bottom'
+      });
     });
   }
 }
@@ -64,8 +88,8 @@ function buildNewCityFields(newTripId) {
   newDiv.id = newTripId;
   newDiv.innerHTML = `
       <input type="text" name="stops[${tripNumber}][city]" id="stops_${tripNumber}_city" class="nested-input city-size algolia-input" required="required" placeholder="Enter Destination">
-      <input type="date" name="stops[${tripNumber}][start_date]" id="stops_${tripNumber}_start_date" class="nested-input date-size" required="required" value=${new_start_date}>
-      <input type="date" name="stops[${tripNumber}][end_date]" id="stops_${tripNumber}_end_date" class="nested-input date-size" required="required" value=${new_end_date}>
+      <input type="text" name="stops[${tripNumber}][start_date]" id="stops_${tripNumber}_start_date" class="nested-input date-size" required="required" value=${new_start_date}>
+      <input type="text" name="stops[${tripNumber}][end_date]" id="stops_${tripNumber}_end_date" class="nested-input date-size" required="required" value=${new_end_date}>
       <button id="delete-city-${tripNumber}" class="delete-city"><i class="fas fa-times-circle"></i></button>
   `;
   return newDiv;
