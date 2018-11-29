@@ -50,7 +50,9 @@
 
                   <a data-toggle="modal" data-target="#modal-item-id-<%= item.id %>">
                     <div class="card-img-top" style="background-image: linear-gradient(rgba(50, 50, 50, 0.1), rgba(50, 50, 50, 0.4)), url('<%= cl_image_path item.photo%>')">
-                      <p class="card-text name"><%= item.name %></p>
+                    </div>
+                    <div class="card-img-bottom">
+                      <p class="card-text-index name"><%= item.name %></p>
                     </div>
                   </a>
                 <%= render partial: 'shared/index_modal', locals: { item: item, user_start_date: items_info[:start_date], user_end_date: items_info[:end_date] } %>
