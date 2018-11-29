@@ -20,6 +20,7 @@ a:hover {
   border-radius: 3px;
   background: #ffffff;
   cursor: pointer;
+  width: 233.99px;
   transition: all 100ms ease;
 }
 
@@ -32,6 +33,7 @@ a:hover {
   background-position: center;
   background-size: cover;
   height: 250px;
+  width: 100%;
   border-radius: 3px 3px 0 0;
   // padding: 15px;
   display: flex;
@@ -105,8 +107,8 @@ a:hover {
 
 .delete {
   position: absolute;
-  bottom: 30px;
-  right: 17px;
+  bottom: 26px;
+  right: 18px;
   padding: 6px 6px;
   font-size: 14px;
   width: 60px;
