@@ -6,8 +6,8 @@
 .modal-content {
   color: black;
   position: relative;
-  margin-top: 100px;
-  height: 760px;
+  margin-top: 30px;
+  // height: 760px;
 }
 
 .modal-title {
@@ -18,7 +18,7 @@
 }
 .modal-image {
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -49,8 +49,9 @@ button.close {
   }
 }
 .modal-footer {
-  margin-top: 20px;
+  margin-top: 10px;
   h3 {
+    margin: 0;
     color: $blue;
     font-size: 25px;
     font-weight: 500;
