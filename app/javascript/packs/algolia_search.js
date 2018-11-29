@@ -4,6 +4,7 @@ var places = require('places.js');
   var placesAutocomplete = places({
     appId: process.env.ALGOLIA_ID,
     apiKey: process.env.ALGOLIA_API_KEY,
+
     container: document.querySelector('#city-input'),
 
   }).configure({
@@ -11,4 +12,3 @@ var places = require('places.js');
     aroundLatLngViaIP: false,
   });
 })();
-
