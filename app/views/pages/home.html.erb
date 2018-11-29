@@ -6,7 +6,7 @@
   </div>
 </div>
 
-  
+
 <div class="container">
     <div id="form">
       <!-- <div class="home-form-title">Enter your itinerary</div> -->
@@ -30,8 +30,8 @@
 
               <div id="trip-field-1" class="trip-field">
                   <%= text_field_tag('stops[1][city]', nil, :required => true, class: "nested-input city-size algolia-input", id: "city-input", placeholder: "Enter Destination" ) %>
-                  <%= date_field_tag('stops[1][start_date]', Date.today, :required => true, class: "nested-input date-size" ) %>
-                  <%= date_field_tag('stops[1][end_date]', Date.today + 7, :required => true, class: "nested-input date-size" ) %>
+                  <%= text_field_tag('stops[1][start_date]', Date.today, :required => true, class: "nested-input date-size" ) %>
+                  <%= text_field_tag('stops[1][end_date]', Date.today + 7, :required => true, class: "nested-input date-size" ) %>
                   <button class="hidden-x" disabled><i class="fas fa-times-circle"></i></button>
               </div>
             </div>
@@ -51,6 +51,7 @@
 
 
 <%= javascript_pack_tag 'add_city' %>
+<%= stylesheet_pack_tag 'add_city' %>
 <%= javascript_pack_tag 'nested_input_home' %>
 <%= javascript_pack_tag 'algolia_search' %>
 <%# javascript_pack_tag 'add_loader' %>
