@@ -6,8 +6,8 @@
 .modal-content {
   color: black;
   position: relative;
-  margin-top: 200px;
-  height: 75vh;
+  margin-top: 100px;
+  height: 760px;
 }
 
 .modal-title {
@@ -18,7 +18,7 @@
 }
 .modal-image {
   width: 100%;
-  height: 500px;
+  height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,6 +54,7 @@ button.close {
     color: $blue;
     font-size: 25px;
     font-weight: 500;
+    padding: 0px;
   }
 }
 

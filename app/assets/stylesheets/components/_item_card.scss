@@ -42,6 +42,15 @@ a:hover {
 //   color: rgba(226, 226, 226, 2);
 // }
 
+.card-img-bottom {
+  height: 60px;
+}
+.card-text-index.name {
+  color: $blue;
+  text-align: left;
+  padding: 5px 15px 15px 15px;
+}
+
 .card-text.name {
   color: $blue;
   font-size: 18px;
@@ -100,6 +109,6 @@ a:hover {
   right: 17px;
   padding: 6px 6px;
   font-size: 14px;
-  width:60px;
-  height:35px;
+  width: 60px;
+  height: 35px;
 }
