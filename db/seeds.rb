@@ -97,7 +97,7 @@ sim_card_item = Item.create(user:evan, name: 'Sim card for SwissCom', descriptio
 mens_boots_item = Item.create(user:evan, name: 'Mens boots', description: 'size 13, Black, waterproof', photo: File.open(Rails.root.join("app", "assets", "images", "hiking_boots2.jpg")))
 waterproof_pouch_item = Item.create(user:evan, name: 'waterproof pouch', description: "Very good quality waterproof bag. I made a lot of memories with this :)", photo: File.open(Rails.root.join("app", "assets", "images", "waterproof_travel_pouch.jpg")))
 
-umbrella_item = Item.create(user:vini, name: 'Umbrella', description: "Really comes in handy in the Paris rain", photo: File.open(Rails.root.join("app", "assets", "images", "umbrella.jpeg")))
+umbrella_item = Item.create(user:vini, name: 'Umbrella', description: "Really comes in handy in the Paris rain", photo: File.open(Rails.root.join("app", "assets", "images", "umbrella.jpg")))
 book_into_the_wild_item = Item.create(user:vini, name: 'Into the wild: Book', description: 'Really interesting book about a real life person who gave up everything and explored the wilderness', photo: File.open(Rails.root.join("app", "assets", "images", "book_into_the_wild.jpg")))
 
 puts 'done creating items'
