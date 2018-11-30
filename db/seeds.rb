@@ -64,9 +64,9 @@ puts 'creating stops'
 evan_copenhagen_stop = Stop.create(city:"copenhagen", start_date:Date.new(2018,12,03), end_date:Date.new(2018,12,28), user:evan, photo: File.open(Rails.root.join("app", "assets", "images", "copenhagen.jpeg")))
 vini_copenhagen_stop = Stop.create(city:"copenhagen", start_date:Date.new(2018,12,01), end_date:Date.new(2018,12,31), user:vini, photo: File.open(Rails.root.join("app", "assets", "images", "copenhagen.jpeg")))
 alice_copenhagen_stop = Stop.create(city:"copenhagen", start_date:Date.new(2018,12,05), end_date:Date.new(2018,12,14), user:alice, photo: File.open(Rails.root.join("app", "assets", "images", "copenhagen.jpeg")))
-eliz_paris_stop = Stop.create(city:"paris", start_date:Date.new(2018,12,10), end_date:Date.new(2018,12,13), user:eliz, photo: File.open(Rails.root.join("app", "assets", "images", "paris.jpg")))
-evan_paris_stop = Stop.create(city:"paris", start_date:Date.new(2018,12,07), end_date:Date.new(2018,12,10), user:evan, photo: File.open(Rails.root.join("app", "assets", "images", "paris.jpg")))
-vini_paris_stop = Stop.create(city:"paris", start_date:Date.new(2018,12,07), end_date:Date.new(2018,12,31), user:vini, photo: File.open(Rails.root.join("app", "assets", "images", "paris.jpg")))
+eliz_paris_stop = Stop.create(city:"paris", start_date:Date.new(2018,12,10), end_date:Date.new(2018,12,13), user:eliz, photo: File.open(Rails.root.join("app", "assets", "images", "paris.jpeg")))
+evan_paris_stop = Stop.create(city:"paris", start_date:Date.new(2018,12,07), end_date:Date.new(2018,12,10), user:evan, photo: File.open(Rails.root.join("app", "assets", "images", "paris.jpeg")))
+vini_paris_stop = Stop.create(city:"paris", start_date:Date.new(2018,12,07), end_date:Date.new(2018,12,31), user:vini, photo: File.open(Rails.root.join("app", "assets", "images", "paris.jpeg")))
 evan_amsterdam_stop = Stop.create(city:"amsterdam", start_date:Date.new(2018,12,15), end_date:Date.new(2018,12,20), user:evan, photo: File.open(Rails.root.join("app", "assets", "images", "amsterdam.jpeg")))
 evan_barcelona_stop = Stop.create(city:"barcelona", start_date:Date.new(2018,12,21), end_date:Date.new(2018,12,30), user:evan, photo: File.open(Rails.root.join("app", "assets", "images", "barcelona.jpeg")))
 puts 'done creating stops'
