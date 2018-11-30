@@ -74,25 +74,25 @@ puts
 
 puts 'creating items'
 charcoal_item = Item.create(user:alice, name: 'Charcoal for BBQ', description: 'still more than 2/3 left ! for someone who love BBQ', photo: File.open(Rails.root.join("app", "assets", "images", "charcoal.jpg")))
-travel_mug_item = Item.create(user:alice, name: 'Travel Mug', description: 'stainless steel travel mug', photo: File.open(Rails.root.join("app", "assets", "images", "travel_mug.jpeg")))
+travel_mug_item = Item.create(user:alice, name: 'Travel Mug', description: 'stainless steel travel mug', photo: File.open(Rails.root.join("app", "assets", "images", "mug.jpg")))
 hiking_boots_item = Item.create(user:alice, name: 'Hiking Boots', description: 'waterproof, size 10, for men', photo: File.open(Rails.root.join("app", "assets", "images", "hiking_boots.jpg")))
 
-insect_repellent_item = Item.create(user:alice, name: 'Insect Repellent', description: 'Brand is "OFF", barely used, mostly full', photo: File.open(Rails.root.join("app", "assets", "images", "insect_repellent.jpeg")))
+insect_repellent_item = Item.create(user:alice, name: 'Insect Repellent', description: 'Brand is "OFF", barely used, mostly full', photo: File.open(Rails.root.join("app", "assets", "images", "repellent.jpg")))
 book_hitchikers_guide_item = Item.create(user:eliz, name: "Book: The Hitchhiker's Guide to the Galaxy", description: "Good condition, Softcover", photo: File.open(Rails.root.join("app", "assets", "images", "hichhiker_book.jpg")))
 unisex_rain_jacket_item = Item.create(user:eliz, name: 'Unisex Rain Jacket', description: 'Color: Blue, waterproof, for adults', photo: File.open(Rails.root.join("app", "assets", "images", "rain_coat.jpg")))
 paris_museum_pass_item = Item.create(user:eliz, name: 'Paris Museum Pass', description: "You can visit any Museum in Paris for free within a 6 day span. I'm leaving Paris earlier than I thought, I hope someone will benefit from this free pass! :)", photo: File.open(Rails.root.join("app", "assets", "images", "paris_museum_pass.jpg")))
 
-travel_pillow_item = Item.create(user:evan, name: 'Travel Pillow', description: 'Very comfy Travel Pillow for adult or child', photo: File.open(Rails.root.join("app", "assets", "images", "travel_pillow.jpeg")))
+travel_pillow_item = Item.create(user:evan, name: 'Travel Pillow', description: 'Very comfy Travel Pillow for adult or child', photo: File.open(Rails.root.join("app", "assets", "images", "travel_pillow.jpg")))
 european_plug_item = Item.create(user:evan, name: 'European USB Plug', description: "Good travel usb plug", photo: File.open(Rails.root.join("app", "assets", "images", "european_plug.jpg")))
 book_harry_potter_philosopher_item = Item.create(user:evan, name: "Harry Potter and the Philosopher's Stone
 ", description: 'Hardcover, good condition', photo: File.open(Rails.root.join("app", "assets", "images", "book_harry_potter_philosopher.jpg")))
 surf_board_item = Item.create(user:evan, name: 'Surfing board for kids', description: 'almost new!, Aloha brand ', photo: File.open(Rails.root.join("app", "assets", "images", "surf_board.jpg")))
-headphone_item = Item.create(user:evan, name: 'Noise cancelling headphones', description: "Great condition, Sennheiser 280. Just got new headphones, don't need them anymore", photo: File.open(Rails.root.join("app", "assets", "images", "sennheiser_280.jpeg")))
+headphone_item = Item.create(user:evan, name: 'Noise cancelling headphones', description: "Great condition, Sennheiser 280. Just got new headphones, don't need them anymore", photo: File.open(Rails.root.join("app", "assets", "images", "headphones.jpeg")))
 spain_guidebook_item = Item.create(user:evan, name: 'Spain guide book', description: "Lonely Planet guide book, includes spanish phrasebook", photo: File.open(Rails.root.join("app", "assets", "images", "spain_guide_book.png")))
 travel_guitar_item = Item.create(user:evan, name: 'Travel guitar', description: "Taylor travel guitar, really good sound for it's size", photo: File.open(Rails.root.join("app", "assets", "images", "travel_guitar.jpg")))
 toiletry_bag_item = Item.create(user:evan, name: 'Toiletry bag and accessories', description: "Leather Toiletry bag, comes with shampoo, conditioner, body soap, and lotion.", photo: File.open(Rails.root.join("app", "assets", "images", "toiletry_bag_and_accessories.jpeg")))
 towel_item = Item.create(user:evan, name: 'Travel Towel', description: "Blue towel, can fold up nicely, dries quickly, perfect for backpackers", photo: File.open(Rails.root.join("app", "assets", "images", "beach_towel.jpg")))
-flashlight_item = Item.create(user:evan, name: 'Small travel flashlight', description: "Usefull for campers and night trekkers", photo: File.open(Rails.root.join("app", "assets", "images", "flashlight_led_portable.jpeg")))
+flashlight_item = Item.create(user:evan, name: 'Small travel flashlight', description: "Usefull for campers and night trekkers", photo: File.open(Rails.root.join("app", "assets", "images", "flashlight.jpg")))
 sim_card_item = Item.create(user:evan, name: 'Sim card for SwissCom', description: 'Works until March/2019. 1GB Internet still remaining', photo: File.open(Rails.root.join("app", "assets", "images", "swiss_simcard.jpg")))
 mens_boots_item = Item.create(user:evan, name: 'Mens boots', description: 'size 13, Black, waterproof', photo: File.open(Rails.root.join("app", "assets", "images", "hiking_boots2.jpg")))
 waterproof_pouch_item = Item.create(user:evan, name: 'waterproof pouch', description: "Very good quality waterproof bag. I made a lot of memories with this :)", photo: File.open(Rails.root.join("app", "assets", "images", "waterproof_travel_pouch.jpg")))
