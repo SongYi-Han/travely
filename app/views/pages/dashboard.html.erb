@@ -55,7 +55,7 @@
                   <% item_cities = item.listings.map {|listing| listing.stop.city.upcase} %>
                   <p class="card-text location"><strong><%= item_cities.join(" - ") %></strong></p>
 
-                  <div id="delete-item">
+                  <div class="delete-item">
                     <%= link_to 'Delete', delete_item_path(item.id), class: 'button button-blue delete', method: :delete, remote: true, data: { confirm: "This will delete all listings for this item. Are you sure you like to delete this item?" } %>
                   </div>
                 </div>
