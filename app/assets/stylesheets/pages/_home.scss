@@ -39,7 +39,7 @@
     cursor: pointer;
     text-align: left;
     &:hover {
-      color: #a6a7a8;
+      color: rgba(255,255,255,0.7);
     }
   }
 }
@@ -71,7 +71,7 @@
 }
 
 .home-form-title {
-  padding-top: 30px;
+  padding-top: 5px;
   padding-bottom: 20px;
   color: $gray;
   font-size: 23px;
@@ -106,7 +106,7 @@
 
 .background-image {
   min-height: calc(100vh - 50px);
-  height: 100vh;
+  // height: 100vh;
   background-size: cover;
   // background-repeat: round;
   background-position: center;
