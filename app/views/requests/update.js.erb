@@ -7,9 +7,9 @@ function acceptRequest() {
   const navBar = document.querySelector('.navbar-wagon');
 
     <% if @request.status === "accepted" %>
-      confirmationElement = `<p><em>You have accepted this request!</em> </p>`
+      confirmationElement = `<p class="status"><em>You have accepted this request!</em> </p>`
     <% else %>
-      confirmationElement = `<p><em>You have denied this request!</em> </p>`
+      confirmationElement = `<p class="status"><em>You have denied this request!</em> </p>`
     <% end %>
   var alert = document.querySelector(".alert")
   if (alert) {
