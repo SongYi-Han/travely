@@ -1,4 +1,5 @@
 .modal-body {
+  width: 300px;
   position: relative;
   padding: 0%;
 }
@@ -7,18 +8,20 @@
   color: black;
   position: relative;
   margin-top: 30px;
+  width: 300px;
   // height: 760px;
 }
 
 .modal-title {
   color: #6a68d9;
-  font-size: 25px;
+  font-size: 17px;
   font-weight: 500;
   padding-top: 10px;
+  margin: 0 0 3px 0;
 }
 .modal-image {
   width: 100%;
-  height: 300px;
+  height: 250px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,8 +39,8 @@ button.close {
   align-items: center;
 }
 .owner-adv {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   background-size: contain;
   position: relative;
@@ -46,6 +49,7 @@ button.close {
     position: absolute;
     left: 45px;
     top: 25%;
+    margin: 0 0 3px 0;
   }
 }
 .modal-footer {
@@ -53,7 +57,7 @@ button.close {
   h3 {
     margin: 0;
     color: $blue;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 500;
     padding: 0px;
   }
@@ -61,27 +65,35 @@ button.close {
 
 .modal-footer p {
   color: $gray;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 200;
+  margin: 0;
 }
 
 .body-left h4 {
   color: $gray;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 200;
+  margin: 0 0 3px 0;
 }
 
 .body-left p {
   color: $dark-gray;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 200;
+  margin: 0 0 3px 0;
 }
 
 .body-right {
   padding-left: 15px;
   h4 {
     color: $gray;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
+    margin: 0 0 3px 0;
+  }
+  p {
+    font-size: 11px;
+    margin: 5px 0 5px 0;
   }
 }
