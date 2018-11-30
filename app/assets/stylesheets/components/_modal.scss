@@ -1,5 +1,5 @@
 .modal-body {
-  width: 300px;
+  width: 370px;
   position: relative;
   padding: 0%;
 }
@@ -7,14 +7,16 @@
 .modal-content {
   color: black;
   position: relative;
-  margin-top: 30px;
-  width: 300px;
+  // margin-top: 30px;
+  width: 372px;
+  margin: 0 18%;
+  border-radius: 5px;
   // height: 760px;
 }
 
 .modal-title {
   color: #6a68d9;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 500;
   padding-top: 10px;
   margin: 0 0 3px 0;
@@ -25,6 +27,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 5px 5px 0 0;
 }
 
 button.close {
@@ -70,30 +73,32 @@ button.close {
   margin: 0;
 }
 
-.body-left h4 {
+.body-left {
+  h4 {
   color: $gray;
   font-size: 10px;
   font-weight: 200;
   margin: 0 0 3px 0;
-}
-
-.body-left p {
+  }
+  p {
   color: $dark-gray;
   font-size: 10px;
   font-weight: 200;
   margin: 0 0 3px 0;
 }
+}
+
 
 .body-right {
   padding-left: 15px;
   h4 {
     color: $gray;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
-    margin: 0 0 3px 0;
+    margin: 0 -1px 3px 0;
   }
   p {
-    font-size: 11px;
-    margin: 5px 0 5px 0;
+    font-size: 13px;
+    margin: 5px 0;
   }
 }
