@@ -64,6 +64,24 @@ button:focus {
   outline: none;
 }
 
+.button-final {
+  padding: 7px 11px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  box-shadow: 0 0 20px rgba(100, 100, 100, 0.1);
+  text-decoration: none;
+  margin: 0 10px;
+  color: white;
+  background: #845FCE;
+  border: 2px solid transparent;
+  &:hover {
+    background-color: #714EBA;
+    color:white
+  }
+}
+
+
 // .btn-purple {
 //   color: #fff;
 //   background-color: $purple;
