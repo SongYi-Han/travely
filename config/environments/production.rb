@@ -4,7 +4,9 @@ Rails.application.configure do
   config.webpacker.check_yarn_integrity = false
   # Settings specified here will take precedence over those in config/application.rb.
   config.assets.compile = true
-      config.assets.digest = true
+  config.serve_static_assets = true
+
+  config.assets.digest = true
   # Code is not reloaded between requests.
   config.cache_classes = true
 
