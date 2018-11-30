@@ -71,7 +71,7 @@
         <% users_received_requests = current_user.received_requests %>
 
         <% if users_received_requests.empty? %>
-          <h3 style="color:red">There are no received requests</h3>
+          <h3 style="color:red">No offers received</h3>
         <% else %>
         <div class="offer-card">
             <% users_received_requests.each do |request| %>
@@ -120,7 +120,7 @@
         <div class="">
           <div class="row">
             <% if @requests.empty? %>
-            <h3 style="color:red">There are no sent requests</h3>
+            <h3 style="color:red">No items requested</h3>
             <% end %>
 
             <% @requests.each do |request| %>
@@ -147,7 +147,8 @@
                        <span><strong>Pending</strong></span>
                         <p class="date-create"><%= request.created_at.strftime("%c") %></p>
                       <% elsif request.status == "accepted" %>
-                        <span>Accepted!</span
+                        <span>Accepted!</span>
+                        <p class="date-create empty-accepted">.</p>
                       <% else %>
                         <span>Sorry, denied.</span>
                  <% end %>
