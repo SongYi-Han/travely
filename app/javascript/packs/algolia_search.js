@@ -2,8 +2,8 @@ var places = require('places.js');
 
 (function () {
   var placesAutocomplete = places({
-    appId: process.env.ALGOLIA_ID,
-    apiKey: process.env.ALGOLIA_API_KEY,
+    appId: "plDDGICMPN9W",
+    apiKey: "046ed8164fb4e498d7148e6fe9e6d424",
 
     container: document.querySelector('#city-input'),
 
